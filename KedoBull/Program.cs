@@ -20,7 +20,7 @@ driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
     btnLogin.Click();
 }
 
-driver.FindElement(By.XPath("//*[@id=\"email\"]")).SendKeys(arguments.Login); //
+driver.FindElement(By.XPath("//*[@id=\"email\"]")).SendKeys(arguments.Login);
 Thread.Sleep(InteractionPauseDurationMs);
 driver.FindElement(By.XPath("//*[@id=\"password\"]")).SendKeys(arguments.Password.ConvertToNonsecureString());
 Thread.Sleep(InteractionPauseDurationMs);
